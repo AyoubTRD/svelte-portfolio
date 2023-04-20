@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+a {
+	@apply text-primary;
+}
+
+html {
+	@apply bg-secondary text-typography;
+}
+
+html,
+body {
+	@apply overflow-x-hidden;
+}
+
+ion-icon {
+	visibility: visible;
+}
