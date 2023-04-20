@@ -3,7 +3,7 @@
 </script>
 
 <button
-	class="rounded-lg text-lg font-semibold flex items-center justify-center py-2 px-6"
+	class="rounded-lg active:!translate-y-0.5 text-lg font-semibold flex items-center justify-center py-2 px-6"
 	class:filled-button={type === 'filled'}
 	class:outlined-button={type === 'outlined'}
 >
@@ -16,6 +16,6 @@
 	}
 
 	.outlined-button {
-		@apply bg-transparent border-[3px] border-primary text-primary transition-all ease-in-out hover:translate-y-0.5;
+		@apply bg-neutral bg-opacity-0 hover:bg-opacity-100 border-[3px] border-primary text-primary transition-all ease-in-out hover:translate-y-[1px];
 	}
 </style>

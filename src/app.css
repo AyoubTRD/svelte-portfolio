@@ -18,3 +18,31 @@ body {
 ion-icon {
 	visibility: visible;
 }
+
+.container {
+	@apply px-5;
+}
+
+.section-title {
+	@apply mb-6;
+}
+
+@keyframes clipFromLeftToRight {
+	0% {
+		clip-path: inset(0 100% 0 0);
+	}
+
+	100% {
+		clip-path: inset(0);
+	}
+}
+
+@keyframes clipFromTopToBottom {
+	0% {
+		clip-path: inset(0 0 100% 0);
+	}
+
+	100% {
+		clip-path: inset(0);
+	}
+}
