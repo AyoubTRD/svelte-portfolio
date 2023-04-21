@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 
 	import BackgroundLines from './BackgroundLines.svelte';
-	import Button from '../Button/Button.svelte';
-	import Typography from '../Typography/Typography.svelte';
+	import Button from '../../shared/Button/Button.svelte';
+	import Typography from '../../shared/Typography/Typography.svelte';
 	import VerticalSocialLinks from './VerticalSocialLinks.svelte';
 </script>
 

@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { rotate } from '../../transitions/rotate';
+	import { rotate } from '../../../transitions/rotate';
 	import { quintInOut, quintOut } from 'svelte/easing';
 	import { fade } from 'svelte/transition';
 

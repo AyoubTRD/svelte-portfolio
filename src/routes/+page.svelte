@@ -1,11 +1,13 @@
 <script>
-	import About from '../components/About/About.svelte';
-	import Header from '../components/Header/Header.svelte';
-	import Hero from '../components/Hero/Hero.svelte';
+	import About from '../components/home-sections/About/About.svelte';
+	import Hero from '../components/home-sections/Hero/Hero.svelte';
+	import Skills from '../components/home-sections/Skills/Skills.svelte';
+	import Header from '../components/shared/Header/Header.svelte';
 </script>
 
 <Header />
 <Hero />
 <About />
+<Skills />
 
 <div class="my-20" />

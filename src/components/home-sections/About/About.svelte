@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 
-	import Typography from '../Typography/Typography.svelte';
+	import Typography from '../../shared/Typography/Typography.svelte';
 	import { slide, fade } from 'svelte/transition';
 
 	let animate = false;
@@ -16,9 +16,9 @@
 		{#if animate}
 			<div transition:fade={{ duration: 400 }}>
 				<Typography type="title"
-					><h1 transition:slide={{ axis: 'y', duration: 500 }} class="section-title">
+					><h2 transition:slide={{ axis: 'y', duration: 500 }} class="section-title">
 						About
-					</h1></Typography
+					</h2></Typography
 				>
 			</div>
 

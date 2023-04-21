@@ -31,7 +31,7 @@
 		{#if animate}
 			<a href="/" transition:fade>
 				<Typography type="title">
-					<h1 class=" font-bold">T</h1>
+					<h6 class=" font-bold">T</h6>
 				</Typography>
 			</a>
 
