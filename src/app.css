@@ -7,7 +7,7 @@ a {
 }
 
 html {
-	@apply bg-secondary text-typography;
+	@apply bg-secondary text-typography font-sans;
 }
 
 html,

@@ -12,12 +12,12 @@
 	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
 	on:inview_enter={(event) => (animate = event.detail.inView)}
 >
-	<div class="container mx-auto py-16">
+	<div class="container mx-auto py-20">
 		{#if animate}
 			<div transition:fade={{ duration: 400 }}>
 				<Typography type="title"
 					><h2 transition:slide={{ axis: 'y', duration: 500 }} class="section-title">
-						About
+						About Me
 					</h2></Typography
 				>
 			</div>
@@ -37,6 +37,8 @@
 					</p>
 				</Typography>
 			</div>
+		{:else}
+			<div class="h-56" />
 		{/if}
 	</div>
 </section>

@@ -1,28 +1,14 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade, scale } from 'svelte/transition';
 	import { quintIn, quintInOut } from 'svelte/easing';
+	import { socialLinks } from '../../../constants/socialLinks';
 
 	let animate = false;
 
 	onMount(() => {
 		animate = true;
 	});
-
-	const socialLinks = [
-		{
-			iconName: 'logo-linkedin',
-			href: 'https://www.linkedin.com/in/ayoub-taouarda/'
-		},
-		{
-			iconName: 'logo-github',
-			href: 'https://github.com/ayoubtrd'
-		},
-		{
-			iconName: 'logo-whatsapp',
-			href: 'https://api.whatsapp.com/send?phone=212602781142'
-		}
-	];
 </script>
 
 <div class="h-56 flex flex-col items-center">

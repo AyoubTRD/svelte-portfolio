@@ -44,10 +44,10 @@
 
 <section
 	id="skills"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-25%' }}
+	use:inview={{ unobserveOnEnter: true, rootMargin: '-40%' }}
 	on:inview_enter={(event) => (animate = event.detail.inView)}
 >
-	<div class="container mx-auto py-16">
+	<div class="container mx-auto py-20">
 		{#if animate}
 			<Typography type="title"
 				><h2 transition:slide={{ duration: 500 }} class="section-title text-center">
@@ -55,13 +55,15 @@
 				</h2></Typography
 			>
 
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
 				{#each skills as skill, i}
-					<div transition:fade={{ duration: 200, delay: i * 100 }}>
+					<div transition:fade={{ duration: 300, delay: i * 100 }}>
 						<SkillCard image={skill.image} label={skill.label} />
 					</div>
 				{/each}
 			</div>
+		{:else}
+			<div class="h-56" />
 		{/if}
 	</div>
 </section>

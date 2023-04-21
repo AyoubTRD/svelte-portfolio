@@ -26,7 +26,7 @@
 	});
 </script>
 
-<header class="fixed z-10 top-0 left-0 w-full h-24 backdrop-blur-lg">
+<header class="fixed z-40 top-0 left-0 w-full h-24 backdrop-blur-lg">
 	<div class="container mx-auto flex items-center justify-between h-full">
 		{#if animate}
 			<a href="/" transition:fade>
