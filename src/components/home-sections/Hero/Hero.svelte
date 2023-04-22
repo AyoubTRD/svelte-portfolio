@@ -5,6 +5,7 @@
 	import Button from '../../shared/Button/Button.svelte';
 	import Typography from '../../shared/Typography/Typography.svelte';
 	import VerticalSocialLinks from './VerticalSocialLinks.svelte';
+	import HeaderPlaceholder from '../../shared/Header/HeaderPlaceholder.svelte';
 </script>
 
 <section
@@ -13,8 +14,7 @@
 >
 	<BackgroundLines />
 
-	<!-- Header placeholder -->
-	<div class="h-24" />
+	<HeaderPlaceholder />
 
 	<div class="flex-1 container flex justify-between items-center">
 		<div class="hero-content">

@@ -6,17 +6,21 @@
 	import { projects } from '../../../constants/projects';
 	import { fade, slide } from 'svelte/transition';
 	import ProjectCard from './ProjectCard.svelte';
+	import BackgroundDots from '../../shared/BackgroundDots/BackgroundDots.svelte';
 
 	let animate = false;
 </script>
 
 <section
 	id="portfolio"
+	class="relative"
 	use:inview={{ unobserveOnEnter: true, rootMargin: '-25%' }}
 	on:inview_enter={(event) => (animate = event.detail.inView)}
 >
 	<div class="container mx-auto py-20 pb-28">
 		{#if animate}
+			<BackgroundDots position="bottom left" />
+
 			<Typography type="title">
 				<h2 class="section-title text-center" transition:slide>Portfolio</h2>
 			</Typography>

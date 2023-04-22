@@ -13,7 +13,7 @@
 <section
 	id="experience"
 	class="relative bg-neutral"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
+	use:inview={{ unobserveOnEnter: true, rootMargin: '-40%' }}
 	on:inview_enter={(event) => (animate = event.detail.inView)}
 >
 	{#if animate}
@@ -87,7 +87,7 @@
 			</div>
 		</div>
 	{:else}
-		<div class="h-56" />
+		<div class="h-96" />
 	{/if}
 </section>
 
