@@ -6,16 +6,16 @@
 	let navLinks = [
 		{
 			label: 'About',
-			href: '#about',
+			href: '/#about',
 			active: true
 		},
 		{
 			label: 'Portfolio',
-			href: '#portfolio'
+			href: '/#portfolio'
 		},
 		{
 			label: 'Contact',
-			href: '#contact'
+			href: '/#contact'
 		}
 	];
 
@@ -31,7 +31,7 @@
 		{#if animate}
 			<a href="/" transition:fade>
 				<Typography type="title">
-					<h6 class=" font-bold">T</h6>
+					<h6 class="font-bold">T</h6>
 				</Typography>
 			</a>
 

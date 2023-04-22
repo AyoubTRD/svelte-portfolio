@@ -1,12 +1,8 @@
 <script lang="ts">
 	import { inview } from 'svelte-inview';
 
-	import Typography from '../../shared/Typography/Typography.svelte';
-
-	import { projects } from '../../../constants/projects';
-	import { fade, slide } from 'svelte/transition';
-	import ProjectCard from './ProjectCard.svelte';
 	import BackgroundDots from '../../shared/BackgroundDots/BackgroundDots.svelte';
+	import PortfolioContent from './PortfolioContent.svelte';
 
 	let animate = false;
 </script>
@@ -21,19 +17,11 @@
 		{#if animate}
 			<BackgroundDots position="bottom left" />
 
-			<Typography type="title">
-				<h2 class="section-title text-center" transition:slide>Portfolio</h2>
-			</Typography>
-
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-				{#each projects as project, i}
-					<div transition:fade={{ duration: 300, delay: i * 100 }}>
-						<ProjectCard {project} />
-					</div>
-				{/each}
-			</div>
+			<PortfolioContent />
 		{:else}
-			<div class="h-56" />
+			<div class="opacity-0">
+				<PortfolioContent />
+			</div>
 		{/if}
 	</div>
 </section>
