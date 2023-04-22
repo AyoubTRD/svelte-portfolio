@@ -1,6 +1,7 @@
 <script lang="ts">
 	import HeaderPlaceholder from '../../../components/shared/Header/HeaderPlaceholder.svelte';
 	import ProjectInfo from '../../../components/other/ProjectInfo/ProjectInfo.svelte';
+	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	export let data;
 
@@ -9,6 +10,8 @@
 	setTimeout(() => {
 		show = true;
 	}, data.delay);
+
+	$: if (show) navLinksStore.set(defaultNavLinks);
 </script>
 
 <svelte:head>

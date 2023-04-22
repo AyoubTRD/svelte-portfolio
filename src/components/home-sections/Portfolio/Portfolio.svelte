@@ -3,15 +3,25 @@
 
 	import BackgroundDots from '../../shared/BackgroundDots/BackgroundDots.svelte';
 	import PortfolioContent from './PortfolioContent.svelte';
+	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	let animate = false;
+
+	function updateNavLinks() {
+		navLinksStore.set(
+			defaultNavLinks.map((link) => ({ ...link, active: link.label === 'Portfolio' }))
+		);
+	}
 </script>
 
 <section
 	id="portfolio"
 	class="relative"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-25%' }}
-	on:inview_enter={(event) => (animate = event.detail.inView)}
+	use:inview={{ rootMargin: '-25%' }}
+	on:inview_enter={(event) => {
+		animate = event.detail.inView;
+		updateNavLinks();
+	}}
 >
 	<div class="container mx-auto py-20 pb-28">
 		{#if animate}

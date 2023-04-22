@@ -5,18 +5,28 @@
 	import { slide } from 'svelte/transition';
 	import { expoOut } from 'svelte/easing';
 	import ListTile from '../../shared/ListTile/ListTile.svelte';
+	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	let animate = false;
 
 	const staggerDelay = 200;
 	const staticDelay = 100;
+
+	function updateNavLinks() {
+		navLinksStore.set(
+			defaultNavLinks.map((link) => ({ ...link, active: link.label === 'Contact' }))
+		);
+	}
 </script>
 
 <section
 	id="contact"
 	class="relative"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-	on:inview_enter={(event) => (animate = event.detail.inView)}
+	use:inview={{ rootMargin: '-20%' }}
+	on:inview_enter={(event) => {
+		animate = event.detail.inView;
+		updateNavLinks();
+	}}
 >
 	{#if animate}
 		<div

@@ -5,15 +5,27 @@
 	import { slide, fade } from 'svelte/transition';
 	import BackgroundDots from '../../shared/BackgroundDots/BackgroundDots.svelte';
 	import AboutContent from './AboutContent.svelte';
+	import { setContext } from 'svelte';
+	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	let animate = false;
+
+	function updateNavLinks() {
+		navLinksStore.set(defaultNavLinks.map((link) => ({ ...link, active: link.label === 'About' })));
+	}
+
+	function onViewEnter(event: CustomEvent<ObserverEventDetails>) {
+		animate = event.detail.inView;
+
+		updateNavLinks();
+	}
 </script>
 
 <section
 	id="about"
 	class="relative"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-	on:inview_enter={(event) => (animate = event.detail.inView)}
+	use:inview={{ rootMargin: '-20%' }}
+	on:inview_enter={onViewEnter}
 >
 	<div class="container mx-auto py-20">
 		{#if animate}

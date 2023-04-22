@@ -2,22 +2,7 @@
 	import { onMount } from 'svelte';
 	import Typography from '../Typography/Typography.svelte';
 	import { slide, fade } from 'svelte/transition';
-
-	let navLinks = [
-		{
-			label: 'About',
-			href: '/#about',
-			active: true
-		},
-		{
-			label: 'Portfolio',
-			href: '/#portfolio'
-		},
-		{
-			label: 'Contact',
-			href: '/#contact'
-		}
-	];
+	import { navLinksStore } from '../../../stores/navLinksStore';
 
 	let animate = false;
 
@@ -36,7 +21,7 @@
 			</a>
 
 			<nav class="flex space-x-6 font-sans-2 font-medium">
-				{#each navLinks as navLink, i}
+				{#each $navLinksStore as navLink, i}
 					<a
 						transition:slide={{ duration: 600, delay: i * 200 }}
 						class:text-opacity-100={navLink.active}
