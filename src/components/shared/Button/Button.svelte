@@ -1,6 +1,8 @@
 <script lang="ts">
 	export let type: 'filled' | 'outlined' = 'filled';
 	export let size: 'sm' | 'md' | 'lg' = 'lg';
+
+	export let fullWidth = false;
 </script>
 
 <button
@@ -10,6 +12,7 @@
 	class:sm-button={size === 'sm'}
 	class:md-button={size === 'md'}
 	class:lg-button={size === 'lg'}
+	class:w-full={fullWidth}
 >
 	<slot />
 </button>

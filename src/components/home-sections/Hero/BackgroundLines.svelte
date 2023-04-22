@@ -14,10 +14,10 @@
 <div class="pointer-events-none">
 	{#each ['', '', '', '', '', '', '', ''] as _, i}
 		{#if animate}
-			<div transition:fade={{ delay: 1000, duration: 1400 }}>
+			<div in:fade={{ delay: 1000, duration: 1400 }} out:fade>
 				<div
 					class="absolute top-0 right-0 origin-left rotate-[39deg]"
-					transition:rotate={{ delay: 1000, from: 30, to: 39, duration: 1000, easing: quintOut }}
+					in:rotate={{ delay: 1000, from: 30, to: 39, duration: 1000, easing: quintOut }}
 				>
 					<div
 						class="scale-x-[2] h-[2px] bg-typography bg-opacity-10"
@@ -30,10 +30,10 @@
 
 	{#each ['', '', '', '', '', '', '', ''] as _, i}
 		{#if animate}
-			<div transition:fade={{ delay: 1000, duration: 1400 }}>
+			<div in:fade={{ delay: 1000, duration: 1400 }} out:fade>
 				<div
 					class="absolute top-0 right-0 origin-left rotate-[40deg]"
-					transition:rotate={{ delay: 1000, from: 30, to: 40, duration: 1000, easing: quintOut }}
+					in:rotate={{ delay: 1000, from: 30, to: 40, duration: 1000, easing: quintOut }}
 				>
 					<div
 						class="scale-x-[2] h-[2px] bg-typography bg-opacity-20"

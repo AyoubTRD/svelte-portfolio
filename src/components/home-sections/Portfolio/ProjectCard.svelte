@@ -28,7 +28,7 @@
 			<div transition:slide={{ delay: 100 }} class="text-center w-full">
 				<h6 class="text-xl font-sans-2 font-bold">{project.name}</h6>
 				<Typography><p class="text-sm">{project.shortDescription}</p></Typography>
-				<a class="flex justify-center mt-3" href="/projects/{project.id}">
+				<a class="flex justify-center mt-3" href="/projects/{project.id}?delay=2000">
 					<Button size="md">See more</Button>
 				</a>
 			</div>

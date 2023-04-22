@@ -38,7 +38,7 @@
 			<nav class="flex space-x-6 font-sans-2 font-medium">
 				{#each navLinks as navLink, i}
 					<a
-						transition:slide={{ duration: 400, delay: i * 200 }}
+						transition:slide={{ duration: 600, delay: i * 200 }}
 						class:text-opacity-100={navLink.active}
 						class:text-opacity-60={!navLink.active}
 						class="text-typography active:text-opacity-100 transition-all hover:text-opacity-100"
