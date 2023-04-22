@@ -11,6 +11,10 @@
 	}, data.delay);
 </script>
 
+<svelte:head>
+	<title>Ayoub Taouarda – {data.project.name}</title>
+</svelte:head>
+
 {#if show}
 	<div class="flex flex-col">
 		<HeaderPlaceholder />
