@@ -16,7 +16,7 @@ export type Project = {
 export const projects: Project[] = [
 	{
 		id: 'social-media',
-		thumbnail: '/projects/social-media/thumbnail.jpg',
+		thumbnail: '/projects/social-media/trd-network-logo.jpg',
 		tags: ['web', 'backend', 'frontend'],
 		images: ['/projects/social-media/1.png', '/projects/social-media/2.png'],
 		name: 'Social Media Platform',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
 	{
 		name: 'ENSA Connect',
 		completed: false,
-		thumbnail: '/projects/ensa-connect/thumbnail.jpg',
+		thumbnail: '/projects/ensa-connect/ensa-connect-logo.jpg',
 		images: [],
 		tags: ['mobile', 'frontend', 'backend'],
 		shortDescription: 'A social network for the students of my national school ENSA',
