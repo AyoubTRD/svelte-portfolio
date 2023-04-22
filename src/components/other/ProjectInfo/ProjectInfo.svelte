@@ -85,9 +85,13 @@
 			</div>
 
 			<div in:slide={{ delay: sectionStaggerDelay * 5 }}>
-				<a href={project.previewUrl} target="_blank">
-					<Button fullWidth>Live Preview</Button>
-				</a>
+				{#if project.previewUrl}
+					<a href={project.previewUrl} target="_blank">
+						<Button fullWidth>Live Preview</Button>
+					</a>
+				{:else}
+					<p>No live preview available for this project.</p>
+				{/if}
 			</div>
 
 			<div class="mt-8">

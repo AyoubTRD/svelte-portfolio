@@ -10,12 +10,12 @@
 </script>
 
 <div
-	class="w-full aspect-square relative"
+	class="w-full aspect-square relative bg-white"
 	on:mouseenter={() => (showInfo = true)}
 	on:mouseleave={() => (showInfo = false)}
 >
 	<img
-		class="absolute w-full h-full top-0 left-0 object-cover"
+		class="absolute w-full h-full top-0 left-0 object-contain"
 		src={project.thumbnail}
 		alt={project.name + ' thumbnail'}
 	/>
