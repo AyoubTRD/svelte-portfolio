@@ -9,7 +9,13 @@
 
 	export let images: string[];
 
+	let swiperContainer: any | undefined;
 	let swiper: Swiper | undefined;
+	let activeIndex = 0;
+	$: {
+		swiper = swiperContainer?.swiper;
+		activeIndex = swiper?.activeIndex || 0;
+	}
 
 	function nextSlide() {
 		swiper?.slideNext();
@@ -18,19 +24,11 @@
 	function prevSlide() {
 		swiper?.slidePrev();
 	}
-
-	onMount(() => {
-		swiper = (document.querySelector('swiper-container') as any).swiper;
-
-		swiper?.on('slideChange', (s) => {
-			swiper = s;
-		});
-	});
 </script>
 
 <div class="relative">
 	<div class="absolute top-1/2 -translate-y-1/2 left-0 z-10">
-		{#if swiper?.activeIndex !== 0}
+		{#if activeIndex !== 0}
 			<button
 				transition:fade={{ duration: 300, easing: expoOut }}
 				on:click={prevSlide}
@@ -41,7 +39,7 @@
 	</div>
 
 	<div class="absolute top-1/2 right-0 -translate-y-1/2 z-10">
-		{#if swiper?.activeIndex !== images.length - 1}
+		{#if activeIndex !== images.length - 1}
 			<button
 				transition:fade={{ duration: 300, easing: expoOut }}
 				on:click={nextSlide}
@@ -51,7 +49,12 @@
 		{/if}
 	</div>
 
-	<swiper-container class="w-full relative aspect-square" autoplay="true">
+	<swiper-container
+		bind:this={swiperContainer}
+		on:slidechange={(swiper) => (activeIndex = swiper.activeIndex)}
+		class="w-full relative aspect-square"
+		autoplay="true"
+	>
 		{#each images as image, i}
 			<swiper-slide><img class="max-w-full" src={image} alt={'Image ' + (i + 1)} /></swiper-slide>
 		{/each}

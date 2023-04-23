@@ -8,6 +8,7 @@
 	import Carousel from '../../shared/Carousel/Carousel.svelte';
 	import Tag from '../../shared/Tag/Tag.svelte';
 	import Button from '../../shared/Button/Button.svelte';
+	import Modal from '../../shared/Modal/Modal.svelte';
 
 	export let project: Project;
 
@@ -20,6 +21,8 @@
 	onMount(() => {
 		animate = true;
 	});
+
+	let showCarouselModal = false;
 </script>
 
 {#if animate}
@@ -74,7 +77,14 @@
 		<div class="lg:col-span-5 col-span-full container !px-0 !max-w-[calc(100vw-2.5rem)]">
 			<div in:fade={{ delay: sectionStaggerDelay }}>
 				<h2 class="!mb-3">Images</h2>
-				<Carousel images={project.images} />
+				<div class="relative">
+					<button
+						on:click={() => (showCarouselModal = true)}
+						class="z-10 absolute top-2 right-2 origin-top-right transition-all scale-100 hover:scale-125 text-secondary text-xl"
+						><ion-icon name="expand-outline" /></button
+					>
+					<Carousel images={project.images} />
+				</div>
 			</div>
 
 			<div class="my-8 flex items-center space-x-3 flex-wrap">
@@ -122,6 +132,12 @@
 		</div>
 	</div>
 {/if}
+
+<Modal showModal={showCarouselModal} on:close={() => (showCarouselModal = false)}>
+	<div class="max-w-[min(100vw,656px)] max-h-[100vh]">
+		<Carousel images={project.images} />
+	</div>
+</Modal>
 
 <style lang="postcss">
 	h2 {
