@@ -60,7 +60,7 @@ export const projects: Project[] = [
 		name: 'ENSA Connect',
 		completed: false,
 		thumbnail: '/projects/ensa-connect/ensa-connect-logo.jpg',
-		images: [],
+		images: new Array(9).fill(1).map((_, i) => `/projects/ensa-connect/${i + 1}.jpg`),
 		tags: ['mobile', 'frontend', 'backend'],
 		shortDescription: 'A social network for the students of my national school ENSA.',
 		description: `

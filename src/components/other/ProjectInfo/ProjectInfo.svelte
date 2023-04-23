@@ -73,6 +73,7 @@
 
 		<div class="lg:col-span-5 col-span-full container !px-0 !max-w-[calc(100vw-2.5rem)]">
 			<div in:fade={{ delay: sectionStaggerDelay }}>
+				<h2 class="!mb-3">Images</h2>
 				<Carousel images={project.images} />
 			</div>
 
