@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { projects } from '../../../constants/projects.js';
+import { projects } from '../../../constants/projects';
 
 export const load = ({ params, url }) => {
 	const project = projects.find((p) => p.id === params.projectId);

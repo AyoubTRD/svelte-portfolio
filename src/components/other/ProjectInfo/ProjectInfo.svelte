@@ -41,6 +41,24 @@
 				</Typography>
 			</div>
 
+			{#if project.tasksWorkedOn?.length}
+				<div in:fade={{ delay: sectionStaggerDelay * 2 }}>
+					<h2 in:slide={{ delay: sectionStaggerDelay * 2 }}>The parts I worked on</h2>
+
+					<ul>
+						{#each project.tasksWorkedOn as task, i}
+							<li in:fade={{ delay: sectionStaggerDelay * 2 + listItemStaggerDelay * (i + 1) }}>
+								<Typography type="body">
+									<p>
+										– {task}
+									</p>
+								</Typography>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			{/if}
+
 			<div in:fade={{ delay: sectionStaggerDelay * 2 }}>
 				<h2 in:slide={{ delay: sectionStaggerDelay * 2 }}>Tech Stack</h2>
 
@@ -75,17 +93,19 @@
 		</div>
 
 		<div class="lg:col-span-5 col-span-full container !px-0 !max-w-[calc(100vw-2.5rem)]">
-			<div in:fade={{ delay: sectionStaggerDelay }}>
-				<h2 class="!mb-3">Images</h2>
-				<div class="relative">
-					<button
-						on:click={() => (showCarouselModal = true)}
-						class="z-10 absolute top-2 right-2 origin-top-right transition-all scale-100 hover:scale-125 text-secondary text-xl"
-						><ion-icon name="expand-outline" /></button
-					>
-					<Carousel images={project.images} />
+			{#if project.images.length}
+				<div in:fade={{ delay: sectionStaggerDelay }}>
+					<h2 class="!mb-3">Images</h2>
+					<div class="relative">
+						<button
+							on:click={() => (showCarouselModal = true)}
+							class="z-10 absolute top-2 right-2 origin-top-right transition-all scale-100 hover:scale-125 text-secondary text-xl"
+							><ion-icon name="expand-outline" /></button
+						>
+						<Carousel images={project.images} />
+					</div>
 				</div>
-			</div>
+			{/if}
 
 			<div class="my-8 flex items-center space-x-3 flex-wrap">
 				{#each project.tags as tag, i}
