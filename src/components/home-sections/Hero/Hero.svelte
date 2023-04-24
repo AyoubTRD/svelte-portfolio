@@ -37,7 +37,9 @@
 					<Typography><span class="text-xl">React & Angular Web Developer</span></Typography>
 				</div>
 
-				<Button type="outlined">Contact Me</Button>
+				<a href="/#contact">
+					<Button type="outlined">Contact Me</Button>
+				</a>
 			</div>
 
 			<div class="h-full flex items-end justify-end">
