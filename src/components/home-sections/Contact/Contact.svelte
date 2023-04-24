@@ -53,12 +53,15 @@
 			<div
 				class="flex items-center mb-6 space-y-6 md:justify-center flex-col md:flex-row md:space-x-8 md:space-y-0 md:mb-8"
 			>
-				<div transition:slide={{ delay: staticDelay + staggerDelay }}>
+				<a
+					transition:slide={{ delay: staticDelay + staggerDelay }}
+					href="mailto:trd.ayoub@outlook.com"
+				>
 					<ListTile iconName="mail-outline" text="trd.ayoub@outlook.com" />
-				</div>
-				<div transition:slide={{ delay: staticDelay + staggerDelay * 2 }}>
+				</a>
+				<a transition:slide={{ delay: staticDelay + staggerDelay * 2 }} href="tel:+212602781142">
 					<ListTile iconName="call-outline" text="+212 602-781142" />
-				</div>
+				</a>
 			</div>
 			<div class="flex justify-center" transition:slide={{ delay: staticDelay + staggerDelay * 3 }}>
 				<ListTile iconName="location-outline" text="Marrakech, Morocco" />
@@ -70,6 +73,10 @@
 </section>
 
 <style lang="postcss">
+	a {
+		@apply hover:shadow-lg transition-all cursor-pointer text-inherit;
+	}
+
 	.yellow-line {
 		@apply w-full bg-primary h-[2px] scale-x-0;
 		animation: scaleInX 600ms ease-out forwards;
