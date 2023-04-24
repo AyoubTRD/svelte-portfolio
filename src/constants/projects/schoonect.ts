@@ -17,9 +17,15 @@ export const schoonect: Project = {
 		'Challenge Library: A huge library of ready to use questions and quizzes to use for assignments',
 		'Internationalization, support for multiple languages'
 	],
+	tasksWorkedOn: [
+		'Ability for a teacher to create a classroom containing a set of students from a school',
+		'Create graded and non graded assignments and quizzes',
+		'Challenge Library: A huge library of ready to use questions and quizzes to use for assignments',
+		'Internationalization, support for multiple languages'
+	],
 	images: [],
 	previewUrl: null,
 	sourceCode: [],
 	tags: ['web', 'frontend'],
-	techStack: ['React', 'Material UI', 'GraphQL', 'MongoDB', 'Node.JS']
+	techStack: ['React', 'Next.js', 'Material UI', 'GraphQL', 'MongoDB', 'Node.JS']
 };

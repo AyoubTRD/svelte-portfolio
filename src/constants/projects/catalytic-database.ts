@@ -8,7 +8,7 @@ export const catalyticDatabase: Project = {
 	sourceCode: [],
 	completed: true,
 	description: `
-			A huge database of over 70,000 catalytics, allowing the exploration all sorts of information about
+			A huge database of over 70,000 catalytics, allowing the exploration of all sorts of information about
 			catalytics including the history of the price of each catalytic over time for any time period.
 			<br />
 			In addition to that, it provides the ability to manage your organization by including other members 
@@ -37,6 +37,6 @@ export const catalyticDatabase: Project = {
 	],
 	images: [],
 	tags: ['web', 'frontend'],
-	techStack: ['React', 'TailwindCSS', 'GraphQL', 'Node.JS', 'MongoDB'],
+	techStack: ['React', 'Next.js', 'TailwindCSS', 'GraphQL', 'Node.JS', 'MongoDB'],
 	thumbnail: '/projects/catalytic-database/catalytic-database-logo.jpg'
 };
