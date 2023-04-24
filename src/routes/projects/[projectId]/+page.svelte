@@ -16,6 +16,8 @@
 
 <svelte:head>
 	<title>Ayoub Taouarda – {data.project.name}</title>
+
+	<meta name="description" content={data.project.description} />
 </svelte:head>
 
 {#if show}
