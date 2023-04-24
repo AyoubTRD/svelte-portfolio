@@ -4,7 +4,7 @@ export const skills = [
 		image: '/skills/typescript-icon.svg'
 	},
 	{
-		label: 'React',
+		label: 'React + Next.js',
 		image: '/skills/react-js-icon.svg'
 	},
 	{
