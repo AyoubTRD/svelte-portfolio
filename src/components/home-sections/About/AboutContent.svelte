@@ -18,9 +18,10 @@
 	</div>
 	<Typography>
 		<p class="max-w-lg" in:fade={{ duration: 300, delay: 300 }}>
-			I am a future Computer Science Engineer with a passion for web development and problem
-			solving. I love enhancing user experience, maximizing user interface and creating scalable and
-			reliable server applications.
+			I am a front end web engineer who loves adding value to the team and being an important and
+			reliable member who can deliver great work in a timely manner. <br /> I’m experienced in React,
+			Next.JS, Angular, TailwindCSS, Node.js, GraphQL and Flutter, but most importantly I would definitely
+			say I am someone who can easily adapt to different work environments and technologies.
 		</p>
 	</Typography>
 </div>
