@@ -24,7 +24,7 @@ ion-icon {
 }
 
 .section-title {
-	@apply mb-6;
+	@apply mb-6 !text-primary;
 }
 
 @keyframes clipFromLeftToRight {

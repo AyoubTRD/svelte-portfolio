@@ -13,15 +13,18 @@
 	<div class="flex items-center h-6">
 		<div
 			in:slide={{ delay: 300, duration: 800, axis: 'x' }}
-			class="md:w-14 w-6 h-[2px] mr-4 bg-primary"
+			class="md:w-14 w-6 h-[2px] mr-4 bg-primary hidden md:block"
 		/>
 	</div>
-	<Typography>
-		<p class="max-w-lg" in:fade={{ duration: 300, delay: 300 }}>
-			I am a front end web engineer who loves adding value to the team and being an important and
-			reliable member who can deliver great work in a timely manner. <br /> I’m experienced in React,
-			Next.JS, Angular, TailwindCSS, Node.js, GraphQL and Flutter, but most importantly I would definitely
-			say I am someone who can easily adapt to different work environments and technologies.
+	<div class="max-w-xl" in:fade={{ duration: 300, delay: 300 }}>
+		<p class="mb-2 md:text-lg">
+			I am a web engineer who loves adding value to the team and being an important and reliable
+			member who can deliver great work in a timely manner.
 		</p>
-	</Typography>
+		<p class="md:text-lg">
+			I’m experienced in React, Next.JS, Angular, TailwindCSS, Node.js, GraphQL and Flutter, but
+			most importantly I would definitely say I am someone who can easily adapt to different work
+			environments and technologies.
+		</p>
+	</div>
 </div>

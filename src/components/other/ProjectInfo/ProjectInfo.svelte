@@ -16,7 +16,7 @@
 
 	let sectionStaggerDelay = 400;
 
-	let listItemStaggerDelay = 400;
+	let listItemStaggerDelay = 150;
 
 	onMount(() => {
 		animate = true;
@@ -102,7 +102,7 @@
 							class="z-10 absolute top-2 right-2 origin-top-right transition-all scale-100 hover:scale-125 text-secondary text-xl"
 							><ion-icon name="expand-outline" /></button
 						>
-						<Carousel images={project.images} />
+						<Carousel images={project.images} aspectRatio={project.imagesAspectRatio} />
 					</div>
 				</div>
 			{/if}

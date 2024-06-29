@@ -11,6 +11,7 @@
 	});
 
 	export let numberOfDots = 16;
+	export let dotsColor: 'primary' | 'white' = 'primary';
 
 	const staggerDelay = 50;
 	const staticDelay = 200;
@@ -26,7 +27,9 @@
 	>
 		{#each new Array(numberOfDots).fill('') as _, i}
 			<div
-				class="p-1 rounded-full bg-primary bg-opacity-30"
+				class="p-1 rounded-full bg-opacity-30"
+				class:bg-primary={dotsColor === 'primary'}
+				class:bg-white={dotsColor === 'white'}
 				transition:fade={{ delay: staticDelay + staggerDelay * i }}
 			/>
 		{/each}

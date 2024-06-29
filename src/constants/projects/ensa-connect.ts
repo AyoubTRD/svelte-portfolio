@@ -6,7 +6,7 @@ export const ensaConnect: Project = {
 	thumbnail: '/projects/ensa-connect/ensa-connect-logo.jpg',
 	images: new Array(9).fill(1).map((_, i) => `/projects/ensa-connect/${i + 1}.jpg`),
 	tags: ['mobile', 'frontend', 'backend'],
-	shortDescription: 'A social network for the students of my national school ENSA.',
+	shortDescription: 'A social network for the students of my national engineering school ENSA.',
 	description: `
 			<p>This is a project I started working on since I got accepted at my current engineering school ENSA. 
 			It is a social network to connect the ENSA engineering students across the whole country, allowing

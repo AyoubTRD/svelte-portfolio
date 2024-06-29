@@ -4,7 +4,8 @@ export const catalyticDatabase: Project = {
 	id: 'catalytic-database',
 	name: 'Catalytic Database',
 	shortDescription: 'Catalytic market explorer and catalytic business management system.',
-	previewUrl: 'https://www.catalyticdatabase.com/welcome',
+	// previewUrl: 'https://www.catalyticdatabase.com/welcome',
+	previewUrl: null,
 	sourceCode: [],
 	completed: true,
 	description: `
@@ -35,7 +36,17 @@ export const catalyticDatabase: Project = {
 		'Track PGM prices live',
 		'Use custom PGM prices for catalytic price calculation'
 	],
-	images: [],
+	images: [
+		'/projects/catalytic-database/landing.jpg',
+		'/projects/catalytic-database/login.jpg',
+		'/projects/catalytic-database/search.jpg',
+		'/projects/catalytic-database/customers.jpg',
+		'/projects/catalytic-database/client.jpg',
+		'/projects/catalytic-database/invoices.jpg',
+		'/projects/catalytic-database/invoice-mode.jpg',
+		'/projects/catalytic-database/settings.jpg'
+	],
+	imagesAspectRatio: '16/9',
 	tags: ['web', 'frontend'],
 	techStack: ['React', 'Next.js', 'TailwindCSS', 'GraphQL', 'Node.JS', 'MongoDB'],
 	thumbnail: '/projects/catalytic-database/catalytic-database-logo.jpg'

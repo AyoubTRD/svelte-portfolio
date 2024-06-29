@@ -23,9 +23,9 @@
 		updateNavLinks();
 	}}
 >
-	<div class="container mx-auto py-20 pb-28">
+	<div class="container mx-auto py-24 pb-28">
 		{#if animate}
-			<BackgroundDots position="bottom left" />
+			<BackgroundDots position="bottom left" dotsColor="white" />
 
 			<PortfolioContent />
 		{:else}

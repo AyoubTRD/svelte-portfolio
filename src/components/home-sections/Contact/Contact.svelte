@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	{:else}
-		<div class="h-36" />
+		<div class="md:h-36 h-96" />
 	{/if}
 </section>
 

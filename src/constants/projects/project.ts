@@ -6,6 +6,7 @@ export type Project = {
 	tags: string[];
 	completed: boolean;
 	images: string[];
+	imagesAspectRatio?: string;
 	techStack: string[];
 	features: string[];
 	previewUrl: string | null;

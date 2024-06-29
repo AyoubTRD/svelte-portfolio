@@ -8,7 +8,7 @@
 </script>
 
 <div in:slide class="container mx-auto absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-	<Typography type="title"><h2>Experience</h2></Typography>
+	<Typography type="title"><h2 class="text-primary">Experience</h2></Typography>
 </div>
 
 <div class="container mx-auto py-28">
@@ -17,7 +17,7 @@
 			<div class="flex md:ml-14">
 				<div class="flex justify-between flex-col">
 					<div
-						class="bg-neutral-500 experience-date pl-3 w-28 h-fit whitespace-nowrap py-2 shadow-md"
+						class="experience-date"
 						in:slide={{ delay: i * staggerDelay + staticDelay + 300, axis: 'x' }}
 					>
 						{experience.to}
@@ -25,7 +25,7 @@
 
 					{#if i === experiences.length - 1}
 						<div
-							class="bg-neutral-500 experience-date pl-3 w-28 h-fit whitespace-nowrap py-2 shadow-md translate-y-2"
+							class="experience-date translate-y-2"
 							in:slide={{
 								delay: i * staggerDelay + staticDelay + 300 + staggerDelay,
 								axis: 'x'
@@ -74,6 +74,7 @@
 
 <style lang="postcss">
 	.experience-date {
+		@apply bg-neutral-500 pl-3 w-24 text-sm md:text-base md:w-28 h-fit whitespace-nowrap py-2 shadow-md;
 		clip-path: polygon(0 0, calc(100% - 1.25rem) 0, 100% 50%, calc(100% - 1.25rem) 100%, 0 100%);
 	}
 </style>
