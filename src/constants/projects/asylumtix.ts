@@ -36,17 +36,25 @@ export const asylumTix: Project = {
 	],
 	imagesAspectRatio: '16/10',
 	tags: ['web', 'frontend', 'backend'],
-	techStack: ['Angular', 'TailwindCSS', 'Angular Material', 'GraphQL', 'Node.JS', 'MongoDB'],
+	techStack: [
+		'Angular',
+		'TailwindCSS',
+		'Angular Material',
+		'Capacitor',
+		'GraphQL',
+		'Node.JS',
+		'MongoDB'
+	],
 	thumbnail: '/projects/asylumtix/asylumtix-logo.jpg',
 	tasksWorkedOn: [
-		'Made tech decisions on approaches to fix problems and to implement new features',
-		'State management refactoring to RxJS',
+		'Initial box office application from scratch using Capacitor',
+		'Ticket hold system conceptualization and implementation to prevent ticket overselling in simultaneous purchase scenarios.',
 		'Event creation & management pages',
 		'Ticket purchasing and payment',
 		'Platform UI design system refactoring',
 		'Discount Code creation/edit and application on purchase',
 		'Company staff management',
 		'Financial Reports',
-		'Reports'
+		'...'
 	]
 };
