@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="w-full aspect-square relative bg-white"
+	class="w-full aspect-square relative bg-white rounded overflow-hidden"
 	on:mouseenter={() => (showInfo = true)}
 	on:mouseleave={() => (showInfo = false)}
 >

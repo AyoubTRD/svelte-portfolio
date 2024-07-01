@@ -6,7 +6,7 @@
 	import Typography from '../../shared/Typography/Typography.svelte';
 	import VerticalSocialLinks from './VerticalSocialLinks.svelte';
 	import HeaderPlaceholder from '../../shared/Header/HeaderPlaceholder.svelte';
-	import { slide } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 
 	let animate = false;
 
@@ -42,8 +42,16 @@
 				</a>
 			</div>
 
-			<div class="h-full flex items-end justify-end">
-				<VerticalSocialLinks />
+			<div class="h-full relative">
+				<!-- <img
+					transition:fade={{ delay: 450, duration: 800 }}
+					class="absolute top-1/3 -translate-y-1/2 right-0 filter grayscale h-96 w-96 max-w-none hidden lg:block object-cover"
+					src="/me/me 2.png"
+					alt="Ayoub Taouarda's photo"
+				/> -->
+				<div class="h-full flex items-end justify-end">
+					<VerticalSocialLinks />
+				</div>
 			</div>
 		</div>
 	{/if}

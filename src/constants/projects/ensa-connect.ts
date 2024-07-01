@@ -8,13 +8,8 @@ export const ensaConnect: Project = {
 	tags: ['mobile', 'frontend', 'backend'],
 	shortDescription: 'A social network for the students of my national engineering school ENSA.',
 	description: `
-			<p>This is a project I started working on since I got accepted at my current engineering school ENSA. 
-			It is a social network to connect the ENSA engineering students across the whole country, allowing
-			people to chat, create group chats, share news, experiences, resources and even host events and meetings
-			right from the application.
-			<br>
-			In addition to that, it allows professors to log into their own separate workspace where they could
-			share resources for students to use, host online classes and make announcements.
+			<p>
+			A social media platform destined to the students and professors of ENSA schools in Morocco, where everyone can communicate and manage school lectures etc... 
 			</p>
 		`,
 	features: [
@@ -38,7 +33,7 @@ export const ensaConnect: Project = {
 		'Make public announcements and events city-wide'
 	],
 	id: 'ensa-connect',
-	previewUrl: null,
+	previewUrl: 'https://asylumtix.com/kazem',
 	sourceCode: [
 		{
 			label: 'Flutter Application',

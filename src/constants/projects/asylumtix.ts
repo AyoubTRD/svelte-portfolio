@@ -8,15 +8,18 @@ export const asylumTix: Project = {
 	sourceCode: [],
 	completed: false,
 	description: `
-			A ticketing platform for event performers and eventgoers, provides the ability to set up an event 
-			taking place in a certain venue, and allowing people reserve tickets to attend the event.
+			<p>
+				A robust ticketing platform allowing venue owners to manage venues, events, customers and sell tickets online through the front office and on-site using the box office mobile app.
+			</p>
+			<p>
+				Led the team to project success, released the functional MVP 1 week ahead of deadline, released major features in a timely manner and proposed effective solutions to issues like “Ticket Hold” for ticket availability assurance.
+			</p>
 		`,
 	features: [
-		'Company staff management with permissions',
-		'Manage venues and events under a company',
-		'Track all sales data on a dashboard',
-		'Sell tickets to events',
-		'Generate reports for an event/company',
+		'Setup venue information, events, tickets, discounts, additional products, etc...',
+		'Sell tickets through the front office or using the mobile app.',
+		'Refund tickets, check customers in/out.',
+		'Conduct reports on events sales and attendance.',
 		'...'
 	],
 	images: [

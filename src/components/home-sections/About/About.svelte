@@ -27,7 +27,7 @@
 	use:inview={{ rootMargin: '-20%' }}
 	on:inview_enter={onViewEnter}
 >
-	<div class="container mx-auto py-24">
+	<div class="container mx-auto pt-24 pb-16">
 		{#if animate}
 			<BackgroundDots />
 			<AboutContent />

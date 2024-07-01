@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fade, slide } from 'svelte/transition';
 	import Typography from '../../shared/Typography/Typography.svelte';
+	import Button from '../../shared/Button/Button.svelte';
 </script>
 
 <div in:fade={{ duration: 400 }}>
@@ -16,15 +17,19 @@
 			class="md:w-14 w-6 h-[2px] mr-4 bg-primary hidden md:block"
 		/>
 	</div>
-	<div class="max-w-xl" in:fade={{ duration: 300, delay: 300 }}>
+	<div class="max-w-3xl" in:fade={{ duration: 300, delay: 300 }}>
 		<p class="mb-2 md:text-lg">
-			I am a web engineer who loves adding value to the team and being an important and reliable
-			member who can deliver great work in a timely manner.
+			I am a passionate full stack engineer with expertise spanning React and Angular in the
+			frontend and mainly NodeJS in the backend. I thrive in dynamic and diverse environments with
+			my quick adaptability to new challenges and consistently delivering high-quality work.
 		</p>
 		<p class="md:text-lg">
-			I’m experienced in React, Next.JS, Angular, TailwindCSS, Node.js, GraphQL and Flutter, but
-			most importantly I would definitely say I am someone who can easily adapt to different work
-			environments and technologies.
+			With my experience leading a team on large-scale projects, I am committed to enhancing team
+			efficiency and bringing innovative solutions to the table.
 		</p>
+
+		<a href="/me/Ayoub Taouarda.pdf" target="_blank" class="block mt-4">
+			<Button type="outlined">Resume</Button>
+		</a>
 	</div>
 </div>

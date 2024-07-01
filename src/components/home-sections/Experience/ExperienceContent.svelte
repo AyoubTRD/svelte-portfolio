@@ -59,12 +59,16 @@
 					>
 					<Typography type="title"
 						><h6 class="font-sans text-lg">
-							{experience.location} – {experience.type === 'part-time' ? 'Part Time' : 'Full Time'}
+							{experience.location} – {experience.type}
 						</h6></Typography
 					>
 
 					<Typography>
-						<p class="mt-4 opacity-70 font-light max-w-lg mb-10">{experience.description}</p>
+						<div>
+							<p class="mt-4 opacity-70 font-light max-w-lg !mb-6">
+								{@html experience.description}
+							</p>
+						</div>
 					</Typography>
 				</div>
 			</div>

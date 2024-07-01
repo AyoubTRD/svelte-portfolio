@@ -46,3 +46,11 @@ ion-icon {
 		clip-path: inset(0);
 	}
 }
+
+#experience strong {
+	@apply font-bold text-white;
+}
+
+#experience li {
+	@apply mb-1;
+}

@@ -55,9 +55,9 @@
 			>
 				<a
 					transition:slide={{ delay: staticDelay + staggerDelay }}
-					href="mailto:trd.ayoub@outlook.com"
+					href="mailto:taouarda.ayoub@outlook.com"
 				>
-					<ListTile iconName="mail-outline" text="trd.ayoub@outlook.com" />
+					<ListTile iconName="mail-outline" text="taouarda.ayoub@outlook.com" />
 				</a>
 				<a transition:slide={{ delay: staticDelay + staggerDelay * 2 }} href="tel:+212602781142">
 					<ListTile iconName="call-outline" text="+212 602-781142" />

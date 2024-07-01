@@ -18,12 +18,21 @@ export const schoonect: Project = {
 		'Internationalization, support for multiple languages'
 	],
 	tasksWorkedOn: [
+		'Improved lighthouse performance score from ~50 to 95+',
 		'Ability for a teacher to create a classroom containing a set of students from a school',
 		'Create graded and non graded assignments and quizzes',
 		'Challenge Library: A huge library of ready to use questions and quizzes to use for assignments',
 		'Internationalization, support for multiple languages'
 	],
-	images: [],
+	images: [
+		'/projects/schoonect/signup.jpg',
+		'/projects/schoonect/discover.jpg',
+		'/projects/schoonect/profile.jpg',
+		'/projects/schoonect/library.jpg',
+		'/projects/schoonect/short-answer-post.jpg',
+		'/projects/schoonect/short-answer-feedback.jpg'
+	],
+	imagesAspectRatio: '144/100',
 	previewUrl: null,
 	sourceCode: [],
 	tags: ['web', 'frontend'],
