@@ -22,19 +22,13 @@ export const catalyticDatabase: Project = {
 		'Create an invoice for an order related to a customer',
 		'Create a customer',
 		'Generate a pdf for invoices',
-		'Manage organization members'
+		'Manage organization members',
+		'Manage settings'
 	],
 	features: [
-		'User authentication',
-		'User memberships and payments',
-		"Search the catalytics' database",
-		"Visualize a catalytic's price over time",
-		'Create an invoice for an order related to a customer',
-		'Create a customer',
-		'Generate a pdf for invoices',
-		'Manage organization members',
-		'Track PGM prices live',
-		'Use custom PGM prices for catalytic price calculation'
+		'Search a large database of catalytic converters.',
+		'View the evolution of a catalytic converter’s price over time.',
+		'Manage customers, invoices and organization members.'
 	],
 	images: [
 		'/projects/catalytic-database/landing.jpg',
