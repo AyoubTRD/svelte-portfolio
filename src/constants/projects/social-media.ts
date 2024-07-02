@@ -4,7 +4,8 @@ export const socialMedia: Project = {
 	id: 'social-media',
 	thumbnail: '/projects/social-media/trd-network-logo.jpg',
 	tags: ['web', 'backend', 'frontend'],
-	images: [],
+	images: new Array(12).fill(1).map((_, i) => '/projects/social-media/' + (i + 1) + '.jpg'),
+	imagesAspectRatio: '28/17',
 	name: 'Social Media Platform',
 	techStack: [
 		'PHP',
