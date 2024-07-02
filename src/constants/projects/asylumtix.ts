@@ -12,7 +12,7 @@ export const asylumTix: Project = {
 				A robust ticketing platform allowing venue owners to manage venues, events, customers and sell tickets online through the front office and on-site using the box office mobile app.
 			</p>
 			<p>
-				Led the team to project success, released the functional MVP 1 week ahead of deadline, released major features in a timely manner and proposed effective solutions to issues like “Ticket Hold” for ticket availability assurance.
+				Led the team to project success, released the functional MVP 1 week ahead of deadline, released major features in a timely manner and proposed effective solutions to issues like “Ticket Hold system” for ticket availability assurance.
 			</p>
 		`,
 	features: [
