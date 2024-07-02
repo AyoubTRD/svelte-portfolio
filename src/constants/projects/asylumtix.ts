@@ -43,7 +43,9 @@ export const asylumTix: Project = {
 		'Capacitor',
 		'GraphQL',
 		'Node.JS',
-		'MongoDB'
+		'ExpressJS',
+		'MongoDB',
+		'Redis'
 	],
 	thumbnail: '/projects/asylumtix/asylumtix-logo.jpg',
 	tasksWorkedOn: [
