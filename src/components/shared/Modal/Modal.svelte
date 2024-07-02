@@ -21,7 +21,7 @@
 {#if showModal}
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<dialog
-		class="fixed h-screen w-full top-0 left-0 m-0 z-50 flex items-center bg-transparent justify-center backdrop-blur-sm"
+		class="fixed h-screen w-full top-5 left-5 m-0 z-50 flex items-center bg-transparent justify-center backdrop-blur-sm"
 		bind:this={dialog}
 		on:close={close}
 		on:click|self={close}
