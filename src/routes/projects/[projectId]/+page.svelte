@@ -4,12 +4,13 @@
 	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	export let data;
+  const delay = data.delay ?? 500;
 
 	let show = false;
 
 	setTimeout(() => {
 		show = true;
-	}, data.delay);
+	}, delay);
 
 	$: if (show) navLinksStore.set(defaultNavLinks);
 </script>
