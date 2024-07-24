@@ -28,7 +28,7 @@
 			efficiency and bringing innovative solutions to the table.
 		</p>
 
-		<a href="/me/Ayoub Taouarda.pdf" target="_blank" class="block mt-4">
+		<a href="/me/Ayoub_Taouarda.pdf" target="_blank" class="block mt-4">
 			<Button type="outlined">Resume</Button>
 		</a>
 	</div>
