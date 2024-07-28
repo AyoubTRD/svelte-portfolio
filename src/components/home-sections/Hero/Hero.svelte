@@ -27,14 +27,18 @@
 		<div class="flex-1 container flex justify-between items-center">
 			<div class="-mt-20" transition:slide={{ delay: 400, duration: 800 }}>
 				<h1 class="mb-2">
-					<span class="font-sans-2 text-5xl mr-3">I'M</span>
+					<span class="font-sans-2 text-3xl md:text-5xl mr-3">I'M</span>
 					<Typography inline type="title"
-						><span class="text-primary text-7xl">Ayoub Taouarda</span></Typography
+						><span class="text-primary text-5xl md:text-7xl">Ayoub Taouarda</span></Typography
 					>
 				</h1>
 
 				<div class="mb-8">
-					<Typography><span class="text-2xl">Software Engineer</span></Typography>
+					<Typography
+						><span class="text-lg md:text-2xl"
+							>I build web applications with React & Angular
+						</span></Typography
+					>
 				</div>
 
 				<a href="/#contact">
