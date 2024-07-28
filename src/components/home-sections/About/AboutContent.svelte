@@ -18,14 +18,11 @@
 		/>
 	</div>
 	<div class="max-w-3xl" in:fade={{ duration: 300, delay: 300 }}>
-		<p class="mb-2 md:text-lg">
-			I am a passionate full stack engineer with expertise spanning React and Angular in the
-			frontend and mainly NodeJS in the backend. I thrive in dynamic and diverse environments with
-			my quick adaptability to new challenges and consistently delivering high-quality work.
-		</p>
 		<p class="md:text-lg">
-			With my experience leading a team on large-scale projects, I am committed to enhancing team
-			efficiency and bringing innovative solutions to the table.
+			With my passion and 3+ years of experience in web development with React, Angular and NodeJS,
+			I aim to reach my full potential by continuously learning and tackling new challenges while
+			adding value and contributing to project sull potential by continuously learning and tackling
+			new challenges while adding value and contributing to project success.
 		</p>
 
 		<a href="/me/Ayoub_Taouarda.pdf" target="_blank" class="block mt-4">

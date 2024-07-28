@@ -43,7 +43,7 @@
 
 			{#if project.tasksWorkedOn?.length}
 				<div in:fade={{ delay: sectionStaggerDelay * 2 }}>
-					<h2 in:slide={{ delay: sectionStaggerDelay * 2 }}>The parts I worked on</h2>
+					<h2 in:slide={{ delay: sectionStaggerDelay * 2 }}>What I have done</h2>
 
 					<ul>
 						{#each project.tasksWorkedOn as task, i}
