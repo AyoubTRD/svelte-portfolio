@@ -2,55 +2,56 @@
 @tailwind utilities;
 @tailwind components;
 
-a {
-	@apply text-primary;
-}
-
 html {
-	@apply bg-secondary text-typography font-sans;
+  font-display: swap;
+  @apply bg-secondary text-typography font-sans;
 }
 
 html,
 body {
-	@apply overflow-x-hidden scroll-smooth;
+  @apply overflow-x-hidden scroll-smooth;
+}
+
+a {
+  @apply text-primary;
 }
 
 ion-icon {
-	visibility: visible;
+  visibility: visible;
 }
 
 .container {
-	@apply px-5;
+  @apply px-5;
 }
 
 .section-title {
-	@apply mb-6 !text-primary;
+  @apply mb-6 !text-primary;
 }
 
 @keyframes clipFromLeftToRight {
-	0% {
-		clip-path: inset(0 100% 0 0);
-	}
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
 
-	100% {
-		clip-path: inset(0);
-	}
+  100% {
+    clip-path: inset(0);
+  }
 }
 
 @keyframes clipFromTopToBottom {
-	0% {
-		clip-path: inset(0 0 100% 0);
-	}
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
 
-	100% {
-		clip-path: inset(0);
-	}
+  100% {
+    clip-path: inset(0);
+  }
 }
 
 #experience strong {
-	@apply font-bold text-white;
+  @apply font-bold text-white;
 }
 
 #experience li {
-	@apply mb-1;
+  @apply mb-1;
 }
