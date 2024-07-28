@@ -27,10 +27,10 @@
 		{#if animate}
 			<BackgroundDots position="bottom left" dotsColor="white" />
 
-			<PortfolioContent />
+			<PortfolioContent disableImages={false} />
 		{:else}
 			<div class="opacity-0">
-				<PortfolioContent />
+				<PortfolioContent disableImages={true} />
 			</div>
 		{/if}
 	</div>

@@ -5,6 +5,7 @@
 	import Button from '../../shared/Button/Button.svelte';
 
 	export let project: Project;
+	export let disableImages: boolean = false;
 
 	let showInfo = false;
 </script>
@@ -15,8 +16,8 @@
 	on:mouseleave={() => (showInfo = false)}
 >
 	<img
-		class="absolute w-full h-full top-0 left-0 object-contain"
-		src={project.thumbnail}
+		class="absolute w-full h-full top-0 left-0 object-contain project-card-img"
+		src={disableImages ? 'data:image/base64;' : project.thumbnail}
 		alt={project.name + ' thumbnail'}
 	/>
 
