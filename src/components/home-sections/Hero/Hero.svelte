@@ -29,7 +29,7 @@
 				<!--  This is a placeholder -->
 				<div />
 
-				<div class="-mt-20" transition:slide={{ delay: 400, duration: 800 }}>
+				<div class="-mt-16" transition:slide={{ delay: 400, duration: 800 }}>
 					<h1 class="mb-2">
 						<span class="font-sans-2 text-3xl md:text-5xl mr-3">I'M</span>
 						<Typography inline type="title"
