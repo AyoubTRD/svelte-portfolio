@@ -51,7 +51,7 @@
 				</div>
 
 				<div class="pb-4" out:fade={{ duration: 300 }} in:fade={{ delay: 3500, duration: 600 }}>
-					<a class="hidden md:block" href="#about">
+					<a class="hidden md:block p-4" href="#about">
 						<ion-icon class="text-4xl animate-bounce" name="chevron-down-outline" />
 					</a>
 				</div>
