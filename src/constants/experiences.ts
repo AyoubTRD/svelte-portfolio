@@ -24,8 +24,8 @@ export const experiences = [
 			<ul>
 				<li><strong>Project Leadership:</strong> Successfully led a team of 5 in building AsylumTix, overseeing the entire development lifecycle from conception to deployment.</li>
 				<li><strong>Client Collaboration:</strong> Worked closely with the client to understand project requirements, leveraging technical expertise to conceptualize and implement high quality solutions.</li>
-				<li><strong>Team Management:</strong> Held screening and technical interviews to hire new team members, ensuring a high standard of skill and compatibility with the company’s environment.</li>
-				<li><strong>Mentorship:</strong> Assisted new hires to adapt to the company’s environment by providing guidance and support to help them grow within the team.</li>
+				<li><strong>Team Management:</strong> Held screening and technical interviews to hire new team members, ensuring a high standard of skill and compatibility with the company's environment.</li>
+				<li><strong>Mentorship:</strong> Assisted new hires to adapt to the company's environment by providing guidance and support to help them grow within the team.</li>
 				<li><strong>Technical Expertise:</strong> Used Angular for front-end development and NodeJS for the back-end, ensuring efficient performance, maintainability and high codebase quality.</li>
 				<li><strong>Project Success:</strong> Implemented innovative and adequate solutions  to deliver critical features in a timely manner.</li>
 				<li><strong>Collaboration:</strong> Worked closely with cross-functional teams to integrate various features and functionalities, ensuring a cohesive and seamless user experience.</li>
