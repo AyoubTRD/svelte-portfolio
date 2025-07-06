@@ -24,9 +24,5 @@
 			adding value and contributing to project sull potential by continuously learning and tackling
 			new challenges while adding value and contributing to project success.
 		</p>
-
-		<a href="/me/Ayoub_Taouarda.pdf" target="_blank" class="block mt-4">
-			<Button type="outlined">Resume</Button>
-		</a>
 	</div>
 </div>
