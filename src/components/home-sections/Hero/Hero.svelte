@@ -40,7 +40,7 @@
 					<div class="mb-8">
 						<Typography
 							><span class="text-lg md:text-2xl"
-								>I build web applications with React & Angular
+								>I build AI web applications with React & Angular
 							</span></Typography
 						>
 					</div>
