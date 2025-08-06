@@ -4,7 +4,7 @@
 	import { defaultNavLinks, navLinksStore } from '../../../stores/navLinksStore';
 
 	export let data;
-  const delay = data.delay ?? 500;
+	const delay = data.delay ?? 500;
 
 	let show = false;
 

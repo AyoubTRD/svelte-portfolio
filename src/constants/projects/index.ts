@@ -8,10 +8,10 @@ import { socialMedia } from './social-media';
 export * from './project';
 
 export const projects = [
-  asylumTix,
-  ensaConnect,
-  socialMedia,
-  catalyticDatabase,
-  schoonect,
-  ensaCampus,
+	asylumTix,
+	ensaConnect,
+	socialMedia,
+	catalyticDatabase,
+	schoonect,
+	ensaCampus
 ];
