@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"posthog-js": "^1.258.6",
 		"svelte-inview": "^4.0.0",
 		"swiper": "^9.2.4"
 	},

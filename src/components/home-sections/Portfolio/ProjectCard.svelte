@@ -16,7 +16,7 @@
 	let animate = false;
 </script>
 
-<div 
+<div
 	class="w-full"
 	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
 	on:inview_enter={(event) => (animate = event.detail.inView)}
@@ -30,7 +30,10 @@
 
 		<!-- Mobile Layout: Unified box with text and image -->
 		<div class="block lg:hidden">
-			<div class="bg-secondary border border-neutral rounded-lg p-6 shadow-xl" in:fly={{ y: 30, delay: index * 200, duration: 600, easing: quintOut }}>
+			<div
+				class="bg-secondary border border-neutral rounded-lg p-6 shadow-xl"
+				in:fly={{ y: 30, delay: index * 200, duration: 600, easing: quintOut }}
+			>
 				<div class="space-y-6">
 					<!-- Content Section -->
 					<div class="space-y-4" in:slide={{ delay: 200, duration: 500, easing: quintOut }}>
@@ -64,7 +67,10 @@
 					</div>
 
 					<!-- Image Section inside the same box -->
-					<div class="flex justify-center" in:fly={{ y: 20, delay: 600, duration: 600, easing: quintOut }}>
+					<div
+						class="flex justify-center"
+						in:fly={{ y: 20, delay: 600, duration: 600, easing: quintOut }}
+					>
 						<div class="w-3/4">
 							<div class="bg-neutral rounded-lg p-4">
 								<img
@@ -83,8 +89,8 @@
 		<div class="hidden lg:block">
 			<div class="relative">
 				<!-- Image Section -->
-				<div 
-					class="flex" 
+				<div
+					class="flex"
 					class:justify-end={!isEven}
 					in:fly={{ x: isEven ? -50 : 50, delay: index * 200, duration: 600, easing: quintOut }}
 				>
@@ -100,8 +106,8 @@
 				</div>
 
 				<!-- Overlapping Content Box -->
-				<div 
-					class="absolute top-1/2 -translate-y-1/2 w-1/2 z-10" 
+				<div
+					class="absolute top-1/2 -translate-y-1/2 w-1/2 z-10"
 					class:right-12={isEven}
 					class:left-12={!isEven}
 					in:fly={{ x: isEven ? 50 : -50, delay: 300, duration: 600, easing: quintOut }}
@@ -145,7 +151,7 @@
 			{#if isFeatured}
 				<div class="text-sm text-primary font-medium mb-4">Featured Project</div>
 			{/if}
-			
+
 			<!-- Mobile Layout: Hidden placeholder -->
 			<div class="block lg:hidden">
 				<div class="bg-secondary border border-neutral rounded-lg p-6 shadow-xl">
@@ -161,7 +167,9 @@
 							</div>
 							<div class="flex flex-wrap gap-2">
 								{#each project.techStack.slice(0, 4) as tech}
-									<span class="px-2 py-1 bg-neutral border border-neutral rounded-full text-xs text-typography">
+									<span
+										class="px-2 py-1 bg-neutral border border-neutral rounded-full text-xs text-typography"
+									>
 										{tech}
 									</span>
 								{/each}
@@ -201,8 +209,8 @@
 							</div>
 						</div>
 					</div>
-					<div 
-						class="absolute top-1/2 -translate-y-1/2 w-1/2 z-10" 
+					<div
+						class="absolute top-1/2 -translate-y-1/2 w-1/2 z-10"
 						class:right-12={isEven}
 						class:left-12={!isEven}
 					>
@@ -218,7 +226,9 @@
 								</div>
 								<div class="flex flex-wrap gap-2">
 									{#each project.techStack.slice(0, 4) as tech}
-										<span class="px-2 py-1 bg-neutral border border-neutral rounded-full text-xs text-typography">
+										<span
+											class="px-2 py-1 bg-neutral border border-neutral rounded-full text-xs text-typography"
+										>
 											{tech}
 										</span>
 									{/each}
