@@ -17,7 +17,7 @@
 <section
 	id="portfolio"
 	class="relative"
-	use:inview={{ rootMargin: '-25%' }}
+	use:inview={{ rootMargin: '-25%', unobserveOnEnter: true }}
 	on:inview_enter={(event) => {
 		animate = event.detail.inView;
 		updateNavLinks();

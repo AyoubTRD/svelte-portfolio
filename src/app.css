@@ -5,6 +5,8 @@
 html {
 	font-display: swap;
 	@apply bg-secondary text-typography font-sans;
+	/* Add subtle texture */
+	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffc86a' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 html,
@@ -21,11 +23,57 @@ ion-icon {
 }
 
 .container {
-	@apply px-5;
+	@apply px-5 lg:px-8;
 }
 
 .section-title {
 	@apply mb-6 !text-primary;
+}
+
+/* Add spacing between sections - editorial style */
+section {
+	margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+	section {
+		margin-bottom: 4rem;
+	}
+}
+
+/* Enhance selection colors - brand-aligned */
+::selection {
+	background: #ffc86a;
+	color: #31333b;
+}
+
+/* Smooth scroll with offset for fixed header */
+html {
+	scroll-padding-top: 80px;
+}
+
+/* Custom scrollbar - brutalist aesthetic */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #31333b;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #ffc86a 0%, #ed9500 100%);
+	border: 2px solid #31333b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ffc86a;
+}
+
+/* Firefox scrollbar */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #ffc86a #31333b;
 }
 
 @keyframes clipFromLeftToRight {
@@ -45,6 +93,17 @@ ion-icon {
 
 	100% {
 		clip-path: inset(0);
+	}
+}
+
+/* Accessibility - respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
 	}
 }
 
