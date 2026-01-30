@@ -38,7 +38,7 @@
 <section
 	id="contact"
 	class="relative"
-	use:inview={{ rootMargin: '-20%', unobserveOnEnter: true }}
+	use:inview={{ rootMargin: '-20%' }}
 	on:inview_enter={(event) => {
 		animate = event.detail.inView;
 		updateNavLinks();

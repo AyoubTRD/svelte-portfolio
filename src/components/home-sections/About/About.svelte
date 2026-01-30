@@ -24,7 +24,7 @@
 <section
 	id="about"
 	class="relative"
-	use:inview={{ rootMargin: '-20%', unobserveOnEnter: true }}
+	use:inview={{ rootMargin: '-20%' }}
 	on:inview_enter={onViewEnter}
 >
 	<div class="container mx-auto pt-24 pb-16">

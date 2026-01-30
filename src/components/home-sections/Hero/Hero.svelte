@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import BackgroundLines from './BackgroundLines.svelte';
 	import Button from '../../shared/Button/Button.svelte';
 	import VerticalSocialLinks from './VerticalSocialLinks.svelte';
 	import HeaderPlaceholder from '../../shared/Header/HeaderPlaceholder.svelte';
@@ -30,11 +29,7 @@
 	const availability = 'Available for Projects';
 </script>
 
-<section
-	id="hero"
-	class="hero-section bg-[#2A2B2E] shadow-2xl relative overflow-hidden"
->
-	<BackgroundLines />
+<section id="hero" class="hero-section bg-[#2A2B2E] shadow-2xl relative overflow-hidden">
 	<HeaderPlaceholder />
 
 	{#if animate}
@@ -50,7 +45,7 @@
 					</div>
 
 					<!-- Geometric accent bar -->
-					<div class="accent-bar"></div>
+					<div class="accent-bar" />
 				</div>
 
 				<!-- Role and specialty -->
@@ -108,7 +103,7 @@
 					<div class="info-card status-card">
 						<span class="card-label">Status</span>
 						<div class="card-value status-value">
-							<span class="status-indicator"></span>
+							<span class="status-indicator" />
 							{availability}
 						</div>
 					</div>
@@ -136,8 +131,17 @@
 				<span class="scroll-text">Scroll to explore</span>
 				<div class="scroll-icon">
 					<svg width="20" height="30" viewBox="0 0 20 30">
-						<rect x="1" y="1" width="18" height="28" rx="9" stroke="currentColor" stroke-width="2" fill="none"/>
-						<circle class="scroll-dot" cx="10" cy="8" r="2" fill="currentColor"/>
+						<rect
+							x="1"
+							y="1"
+							width="18"
+							height="28"
+							rx="9"
+							stroke="currentColor"
+							stroke-width="2"
+							fill="none"
+						/>
+						<circle class="scroll-dot" cx="10" cy="8" r="2" fill="currentColor" />
 					</svg>
 				</div>
 			</a>
@@ -461,13 +465,7 @@
 	}
 
 	.time-separator {
-		animation: blink 1s step-start infinite;
-	}
-
-	@keyframes blink {
-		50% {
-			opacity: 0;
-		}
+		animation: none;
 	}
 
 	/* Status value */
