@@ -42,23 +42,6 @@
 			</div>
 		</div>
 
-		<!-- Stats panel -->
-		<div class="stats-panel" in:reveal={{ duration: 700, delay: 600, y: 20 }}>
-			<div class="stat-item">
-				<span class="stat-value">React</span>
-				<span class="stat-label">Primary</span>
-			</div>
-			<div class="stat-divider" />
-			<div class="stat-item">
-				<span class="stat-value">Angular</span>
-				<span class="stat-label">Framework</span>
-			</div>
-			<div class="stat-divider" />
-			<div class="stat-item">
-				<span class="stat-value">Node.js</span>
-				<span class="stat-label">Backend</span>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -208,52 +191,4 @@
 		color: rgba(228, 228, 229, 0.85);
 	}
 
-	/* Stats panel - Swiss grid style */
-	.stats-panel {
-		display: grid;
-		grid-template-columns: 1fr auto 1fr auto 1fr;
-		gap: 2rem;
-		margin-top: 3rem;
-		padding: 2rem;
-		background: rgba(61, 62, 66, 0.4);
-		border-left: 3px solid #ffc86a;
-		align-items: center;
-	}
-
-	@media (max-width: 768px) {
-		.stats-panel {
-			grid-template-columns: 1fr;
-			gap: 1.5rem;
-		}
-
-		.stat-divider {
-			display: none;
-		}
-	}
-
-	.stat-item {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.stat-value {
-		font-size: 1.25rem;
-		font-weight: 600;
-		color: #ffffff;
-		letter-spacing: 0.02em;
-	}
-
-	.stat-label {
-		font-size: 0.75rem;
-		text-transform: uppercase;
-		letter-spacing: 0.15em;
-		color: rgba(228, 228, 229, 0.5);
-	}
-
-	.stat-divider {
-		width: 1px;
-		height: 40px;
-		background: rgba(255, 200, 106, 0.2);
-	}
 </style>

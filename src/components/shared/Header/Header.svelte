@@ -39,9 +39,6 @@
 			<!-- Logo/Brand -->
 			<a href="/" class="brand-link" in:scale={{ duration: 600, easing: backOut }}>
 				<div class="brand-wrapper">
-					<!-- Monogram -->
-					<div class="monogram">AT</div>
-					<!-- Full name (hidden on mobile) -->
 					<div class="brand-name">
 						<span class="brand-first">Ayoub</span>
 						<span class="brand-last">Taouarda</span>
@@ -145,42 +142,12 @@
 		gap: 1rem;
 	}
 
-	/* Monogram - Always visible */
-	.monogram {
-		font-family: 'DM Serif Display', Georgia, serif;
-		font-size: 2rem;
-		font-weight: 400;
-		color: #ffc86a;
-		letter-spacing: -0.05em;
-		line-height: 1;
-		width: 48px;
-		height: 48px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: rgba(255, 200, 106, 0.1);
-		border: 2px solid rgba(255, 200, 106, 0.3);
-		position: relative;
-		transition: all 0.3s ease;
-	}
-
-	.brand-link:hover .monogram {
-		background: rgba(255, 200, 106, 0.2);
-		border-color: rgba(255, 200, 106, 0.6);
-	}
-
-	/* Brand name - Hidden on mobile */
+	/* Brand name */
 	.brand-name {
-		display: none;
+		display: flex;
 		flex-direction: column;
 		gap: 0;
 		line-height: 1.1;
-	}
-
-	@media (min-width: 768px) {
-		.brand-name {
-			display: flex;
-		}
 	}
 
 	.brand-first,

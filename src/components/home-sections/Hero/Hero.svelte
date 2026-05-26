@@ -26,7 +26,6 @@
 
 	// Get location
 	const location = 'Marrakech, Morocco';
-	const availability = 'Available for Projects';
 </script>
 
 <section id="hero" class="hero-section bg-[#2A2B2E] shadow-2xl relative overflow-hidden">
@@ -97,15 +96,6 @@
 					<div class="info-card location-card">
 						<span class="card-label">Based In</span>
 						<div class="card-value">{location}</div>
-					</div>
-
-					<!-- Status card -->
-					<div class="info-card status-card">
-						<span class="card-label">Status</span>
-						<div class="card-value status-value">
-							<span class="status-indicator" />
-							{availability}
-						</div>
 					</div>
 
 					<!-- Experience card -->
@@ -392,6 +382,10 @@
 		.info-grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		.experience-card {
+			grid-column: 1 / -1;
+		}
 	}
 
 	@keyframes fadeIn {
@@ -466,32 +460,6 @@
 
 	.time-separator {
 		animation: none;
-	}
-
-	/* Status value */
-	.status-value {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-	}
-
-	.status-indicator {
-		width: 10px;
-		height: 10px;
-		background: #00ff88;
-		border-radius: 50%;
-		animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-		box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.5;
-		}
 	}
 
 	/* Experience value */
