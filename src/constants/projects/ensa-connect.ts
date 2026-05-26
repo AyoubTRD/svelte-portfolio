@@ -33,7 +33,7 @@ export const ensaConnect: Project = {
 		'Make public announcements and events city-wide'
 	],
 	id: 'ensa-connect',
-	previewUrl: 'https://asylumtix.com/kazem',
+	previewUrl: null,
 	sourceCode: [
 		{
 			label: 'Flutter Application',
