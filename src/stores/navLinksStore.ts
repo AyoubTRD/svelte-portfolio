@@ -13,7 +13,7 @@ export const defaultNavLinks: NavLink[] = [
 		active: false
 	},
 	{
-		label: 'Technical Arsenal',
+		label: 'Technologies',
 		href: '/#skills',
 		active: false
 	},

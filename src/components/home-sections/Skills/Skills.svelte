@@ -7,7 +7,7 @@
 
 	function updateNavLinks() {
 		navLinksStore.set(
-			defaultNavLinks.map((link) => ({ ...link, active: link.label === 'Technical Arsenal' }))
+			defaultNavLinks.map((link) => ({ ...link, active: link.label === 'Technologies' }))
 		);
 	}
 </script>
