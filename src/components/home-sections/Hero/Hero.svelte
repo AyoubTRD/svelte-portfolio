@@ -434,10 +434,6 @@
 		transform: translateY(-4px);
 	}
 
-	.experience-card {
-		grid-column: 1 / -1;
-	}
-
 	.card-label {
 		font-size: 0.75rem;
 		text-transform: uppercase;
