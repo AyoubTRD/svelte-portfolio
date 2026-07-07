@@ -12,7 +12,6 @@
 
 <main class="maintenance-page" aria-labelledby="maintenance-title">
 	<section class="maintenance-card">
-		<p class="eyebrow">Portfolio update</p>
 		<h1 id="maintenance-title">Updates are being made.</h1>
 		<p class="message">The portfolio will be available again soon.</p>
 	</section>
@@ -40,15 +39,6 @@
 		border-radius: 1.5rem;
 		background: rgba(18, 18, 18, 0.76);
 		box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.28);
-	}
-
-	.eyebrow {
-		margin: 0 0 1rem;
-		color: #ffc86a;
-		font-size: 0.8rem;
-		font-weight: 700;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
 	}
 
 	h1 {
